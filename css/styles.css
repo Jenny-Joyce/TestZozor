@@ -1,12 +1,25 @@
-/* element géneraux de la page*/
+/* Polices*/
 
 @font-face {
     font-family: 'BallparkWeiner';
-    src: url('polices/ballpark.eot');
-    src: url('polices/ballpark.ttf');
+    src: url('../polices/ballpark.eot');
+    src: url("../polices/ballpark.ttf"), 
+    url("../polices/ballpark.woff"), 
+    url("../polices/dayrom.svg");
+    font-style: normal;
+    font-weight: normal;
+        
+}
+@font-face {
+    font-family: "dayrom";
+    src: url("../polices/dayrom.eot");
+    src: url("../polices/dayrom.ttf"), 
+    url("../polices/dayrom.woff");
+    font-style: normal;
+    font-weight: normal;
 }
 
-
+/* Général*/
 body{
     background: url("../images/fond_jaune.png");
     font-family: "Trebuchet", "Arial", "sans-sérif";
@@ -16,16 +29,11 @@ body{
     width: 900px;
     margin: auto;
 }
+/*Header*/
 header{
     display: flex;
-    border: 1px solid black;
+    border: 1px solid #ff000f;
 }
-header h1{
-    align-items: flex-end;
-    border: black solid 1px;
-}
-h2{
-    
-    border: 1px solid black;
-
+#logo {
+  display: flex;
 }
